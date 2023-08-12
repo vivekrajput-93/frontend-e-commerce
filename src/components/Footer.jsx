@@ -122,7 +122,7 @@ const Footer = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <Room style={{ marginRight: "10px" }} /> Hyderabad, Telangana India.
+          <Room style={{ marginRight: "10px" }} /> Uttar Pradesh India.
         </ContactItem>
         <ContactItem>
           <Phone style={{ marginRight: "10px" }} /> +91 9347171539
