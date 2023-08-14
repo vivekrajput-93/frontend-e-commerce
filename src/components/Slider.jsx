@@ -79,6 +79,7 @@ const But = styled.button`
   font-size: 20px;
   background-color: transparent;
   cursor: pointer;
+  position: relative;
 `;
 
 const Slider = () => {
