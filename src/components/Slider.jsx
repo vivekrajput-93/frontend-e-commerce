@@ -74,7 +74,7 @@ const Desc = styled.p`
   letter-spacing: 3px;
 `;
 
-const Button = styled.button`
+const But = styled.button`
   padding: 10px;
   font-size: 20px;
   background-color: transparent;
@@ -105,7 +105,7 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button>SHOW NOW</Button>
+              <But>SHOW NOW</But>
             </InfoContainer>
           </Slide>
         ))}
