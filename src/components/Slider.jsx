@@ -31,6 +31,8 @@ const Arrow = styled.div`
   z-index: 2;
   border: 1px solid var(--bg-color);
   border-radius: 5px;
+  display: flex;
+  jsutify-content: space-between;
 `;
 
 const Wrapper = styled.div`
