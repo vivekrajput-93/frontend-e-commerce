@@ -1,5 +1,4 @@
-import ArrowLeftOutlinedIcon from "@mui/icons-material/ArrowLeftOutlined";
-import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
+import { ArrowLeftOutlined, ArrowRightOutlined } from "@mui/icons-material";
 import { useState } from "react";
 import styled from "styled-components";
 import { data } from "../data";
@@ -10,13 +9,14 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-    margin-top: 20px
+  margin-top:20px;
 `;
 
 const Arrow = styled.div`
   width: 50px;
   height: 50px;
   background-color: #fff7f7;
+  border: 1px solid var(--bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,10 +29,6 @@ const Arrow = styled.div`
   cursor: pointer;
   opacity: 0.5;
   z-index: 2;
-  border: 1px solid var(--bg-color);
-  border-radius: 5px;
-  display: flex;
-  jsutify-content: space-between;
 `;
 
 const Wrapper = styled.div`
@@ -56,8 +52,8 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-  height: 85%;
-  mix-blend-mode: multiply;
+  height: 80%;
+  mix-blend-mode: multiply
 `;
 
 const InfoContainer = styled.div`
@@ -76,12 +72,11 @@ const Desc = styled.p`
   letter-spacing: 3px;
 `;
 
-const But = styled.button`
+const Button = styled.button`
   padding: 10px;
   font-size: 20px;
   background-color: transparent;
   cursor: pointer;
-  position: relative;
 `;
 
 const Slider = () => {
@@ -97,7 +92,7 @@ const Slider = () => {
   return (
     <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
-        <ArrowLeftOutlinedIcon />
+        <ArrowLeftOutlined />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
         {data.map((item) => (
@@ -108,13 +103,13 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <But>SHOW NOW</But>
+              <Button>SHOW NOW</Button>
             </InfoContainer>
           </Slide>
         ))}
       </Wrapper>
       <Arrow direction="right" onClick={() => handleClick("right")}>
-        <ArrowRightOutlinedIcon />
+        <ArrowRightOutlined />
       </Arrow>
     </Container>
   );

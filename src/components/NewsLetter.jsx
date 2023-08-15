@@ -74,7 +74,6 @@ const NewsLetter = () => {
             <Send />
         </Button>
         </InputContainer>
-        <Desc>Subscribe to our newsletter and stay updated on the latest trends, exclusive offers, and more.</Desc>
     </Container>
   )
 }
